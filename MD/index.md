@@ -4,7 +4,7 @@ El objetivo de esta práctica es comprender los buses de comunicación SPI. Para
 
 El código usado para la práctica lo tuve que alargar un poco más para poder comprovar el funcionamiento del código.
 
-## ** 1) void setup() **
+## **1) void setup()**
 
 ```cs
 
@@ -125,7 +125,8 @@ La función para entender lo que hace haría falta meterse muy a dentro de la cl
   Una vez inicializada miramos si se encuentra algún fichero en la tarjeta con la función SD.exists('/nombre_archivo'). 
   Ahora que ya todo funciona y se ha podido localizar el archivo, procedemos a abrir y leerlo.
     
-    Primero de todo lo que hago está por si el archivo no existiera, si ya se tiene un archivo guardado no haría falta hacer lo siguiente:
+Primero de todo lo que hago está por si el archivo no existiera, si ya se tiene un archivo guardado no haría falta hacer lo siguiente:
+
 ```cs
     myFile=SD.open("/archivo.txt",FILE_WRITE);
     myFile.println("Hola mundo");
